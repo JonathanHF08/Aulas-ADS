@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+</head>
+<body>
+    <form action="" method="post">
+
+        <br><br>
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" size="50" maxlength="50" required>
+        <!-- O Size é o tamanho do campo e maxlength é a quantidade maxima de caracteres required torna o campo obrigatório-->
+        <br><br>
+        <label for="senha">Senha</label>
+        <input type="text" type="password" name="senha" size="8" maxlength="8" required>
+        <br><br>
+
+        <fieldset>
+            <label for="linguagem">linguagem que tem interesse</label>
+            <br><br>
+            <input type="checkbox" name="linguagem[]" value="JavaScript">JavaScript
+
+            <input type="checkbox" name="linguagem[]" value="PHP">PHP
+
+            <input type="checkbox" name="linguagem[]" value="Python">Python
+        </fieldset>
+        <br><br>
+        <label>
+  Aceito os termos
+  <input type="checkbox" name="termos">
+  
+  <br><br>
+</label>
+<label for="linguagemescolhida"></label>
+<input type="radio" name="linguagemescolhida" value="JavaScript">JavaScript
+<input type="radio" name="linguagemescolhida" value="PHP">PHP
+    <br><br>
+<select name="escola">
+    <option value="JavaScript">JavaScript</option>
+    <option value="PHP">PHP</option>
+    <option value="Python">Python</option>
+</select>
+    </form>
+</body>
+</html>

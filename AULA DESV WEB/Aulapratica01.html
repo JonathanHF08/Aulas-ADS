@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessibilidade</title>
+</head>
+<body>
+    <table border="1" sumary="Tabela com preços de ameixas e pera">
+        <caption>Preços em reais de ameixas e pera em Campinas</caption>
+<!--Sumary serve para que o leitor para pessoas cegas faça a leitura da tabela -->
+<!-- Caption é o título da tabela, que aparece acima dela -->
+        <tr>
+            <th>Tipo</th>
+            <th>Atacado</th>
+            <th>Varejo</th>
+        </tr>
+        <tr>
+            <td>Ameixa Preta</td>
+            <td>1,00</td>
+            <td>2,00</td>
+        </tr>
+        <tr>
+            <td>Pera</td>
+            <td>1,50</td>
+            <td>2,50</td>
+        </tr>
+    </table> 
+<tr>
+    <td></td>
+    <th>Ameixa Preta</th>
+    <th>Pera</th>
+</tr>
+<tr>
+    <th>Atacado</th>
+    <td>1,00</td>
+    <td>1,50</td>
+</tr>
+<tr>
+    <th>varejo</th>
+    <td>2,00</td>
+    <td>2,50</td>
+</tr>
+<br>
+
+<thead> 
+    <tr>
+        <td> <!-- thead serve pata ajudar o defeiciente visual, facilitando o uso de leitores de tela --> </td>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td> <!-- tbody serve para agrupar o corpo da tabela --> </td>
+        <th headers=""><!-- dento dos parenteses coloca o que quer que o leitor leia para o deficiente visual --> 1,00</th>
+    </tr>
+
+</body>
+</html>

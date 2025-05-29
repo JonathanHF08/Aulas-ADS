@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    
+    <H1> Exemplo de formulário simples </H1>
+
+    <form action="" method=""> <!-- action é o destino do formulário, method é o método de envio (GET ou POST) sempre precisa ter -->
+        <table>
+
+            <tr>
+                <th><label for="nome">Nome</label></th> <!-- o for label serve para associar um texto informativo (rótulo) a um elemento de formulário nesse caso o imput -->
+                <td><input type="text" name="nome" id="nome"></td> <!-- o for do label deve ser igual ao id do input -->
+            </tr>
+
+            <tr>
+                <th><label for="email"></label>E-mail</th>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+
+            <tr>
+                <th><label for="msg">Digite sua mensagem</label></th>
+                <td><textarea name="msg" rows="5" cols="40">Digite sua mensagem</textarea></td> <!--  -->
+            </tr>
+
+            <tr>
+                <th></th> <!-- o th vazio serve para alinhar os elementos da tabela -->
+                <td><button>Enviar</button></td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
