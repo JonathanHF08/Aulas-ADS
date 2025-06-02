@@ -1,0 +1,16 @@
+    
+        *{ 
+            text-align: center;
+            color: blue;
+        }
+        p{
+            text-align: justify;
+            color: red;
+            
+        }
+        #p{
+            color: aquamarine;
+        }
+        .p{
+            color: green;
+        }

@@ -1,0 +1,29 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+p,h1,h2{text-align: center;}
+
+.tamanho{
+    width: 30%;
+    height: 250px;
+    border: solid 1px;
+    border-radius: 50px 5px;
+}
+.espaço{
+    padding: 20px;
+}
+.principal{
+    width: 100%;
+    padding: 20px;
+    margin: auto;  
+}
+.cor1{
+    background-color: aqua;
+}
+.cor2{
+    background-color: brown;
+}
+.cor3{
+    background-color: blanchedalmond;
+}
