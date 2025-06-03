@@ -1,0 +1,144 @@
+/*
+****** LIMPAR INFORMAÇÕES DE ESTILO PRÉDEFINIDAS****** 
+*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*
+****** FORMATAÇÕES GENÉRICAS ****** 
+*/
+body{
+    font-size: 16px; /* Tamanho da fonte padrão */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Fonte padrão, tem ordem e depende do pc ter essas fonte se não vai passando até encontar uma que tenha*/
+    background-color: #c4c4c4; /* Cor de fundo da página */
+}
+
+h1{
+    color: #252525;
+    font-size: 40px; /* Tamanho da fonte do título */
+}
+
+h2{
+    color: #0066cc;
+}
+
+h3{
+    color: #565656;
+    background: #cccccc;
+    padding: 5px; /* Espaçamento interno do título */
+}
+
+/*
+****** HEADER****** 
+*/
+#header{
+    background-color: #0066cc;
+    padding: 15px; /* Espaçamento interno quando tem só uma informação ela é colocada em todas as direções do box */
+    text-align: center;
+}
+
+#logo, #menu{
+    padding: 10px;
+}
+
+#header a:link, #header a:visited{ /* Link não visitado e link visitado o "a" serve para selecioar em header as funcionalidades dos links*/
+    color: white; /* Cor do texto */
+    padding: 8px 12px; /* Espaçamento interno do link topo e boton X largura esquerda e direita*/
+}
+#header a:hover{
+    color: #0006cc; /* Cor do texto quando o mouse passa por cima */
+    background-color: #ffffff; /* Cor de fundo quando o mouse passa por cima */
+    text-decoration:none ; /* Retira o sublinhado do link pré definido*/
+}
+
+/* com classe eu uso o . para selecionalo diferente do ID que é #*/
+.white{
+    color: white;
+}
+
+/* 
+****** CONTEUDO ****** 
+*/
+
+#content{
+    width: 920px; /* Largura do conteúdo total*/
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    padding: 15px;
+}
+
+#posts{
+    width: 660px; /* Largura dos posts */
+    float: left; /* Faz com que os posts fiquem alinhados à esquerda */
+}
+
+.post{
+    padding: 20px;
+    margin-bottom: 20px; /* Espaçamento entre os posts */
+    background-color: #ffffff; /* Cor de fundo dos posts */
+    text-align: justify;
+}
+
+.data-post{
+    font-size: 13px; /* Tamanho da fonte da data do post */
+    border-bottom: 1px solid #0066cc; /* Linha de separação abaixo da data */
+    padding-bottom: 10px;
+    margin-bottom: 10px; /* Espaçamento abaixo da data */
+    display: block; /* Faz com que a data ocupe toda a largura disponível */
+}
+
+.img-post{
+    width: 620px; /* Largura da imagem do post */
+}
+
+/*
+****** RIGHT SIDE ****** 
+*/
+
+#right-side{
+    width: 240px; /* Largura da barra lateral */
+    float: right; /* Alinha a barra lateral à direita */
+}
+
+/* calcular a largura da pagina para não sobrar, levar em consideração os espaços entre os conteudos */
+
+.content-right{
+    margin-bottom: 20px; /* Espaçamento entre os conteúdos da barra lateral */
+    padding: 10px; 
+    background: #ffffff; /* Cor de fundo da barra lateral */
+}
+
+.post-right{ 
+    font-size: 13px; /* Tamanho da fonte dos posts na barra lateral */
+    padding: 5px; 
+    border-bottom: 1px dotted #cccccc; /* Linha pontilhada abaixo dos posts na barra lateral */
+}
+
+/*
+****** FORMATAÇÃO LINKS ****** 
+*/
+
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{ /* "a" serve para colocar link no html e agr está sendo alterado o estilo de todos */
+    color: #0066cc; /* Cor dos links não visitados e visitados */
+}
+
+a:hover{
+    text-decoration: underline; /* Sublinha os links quando o mouse passa por cima */
+}
+
+/* 
+****** FOOTER ****** 
+*/
+
+#footer{
+    clear:both; /* Limpa os floats anteriores para que o footer fique abaixo de todos os outros elementos */
+    text-align: center;
+    padding: 15px;
+    background: #ffffff; /* Cor de fundo do footer */
+    color:#0066cc; /* Cor do texto do footer */
+}
