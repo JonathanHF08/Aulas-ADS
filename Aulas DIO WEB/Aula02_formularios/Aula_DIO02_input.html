@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+
+    <form>
+        <label>Text:</label><input type="text"><!-- Caixa de texto normal -->
+        <br>
+        <label>Number:</label><input type="number" min="0" max="99" step="5"/>
+        <br>
+        <label>Button:</label><input type="button" value="Enviar"/> <button type="button">Enviar 2</button> <!-- Existem 2 forams de colcoar botão via tag button ou  via input, mas via tag funciona melhor -->
+        <br>
+        <label>Range:</label><input type="range" min="0" max="100" value="25"/> <!-- Cria um campo de scrol -->
+        <br>
+        <label>Color:</label><input type="color"/>
+        <br>
+        <label>e-mail:</label><input type="email"/><!-- Formece uma informação padrão quando o e-mail estiver incorreto -->
+        <br>
+        <label>URL:</label><input type="url"/>
+        <br>
+        <label>Date:</label><input type="date"/>
+        <br>
+        <label>Week:</label><input type="week"/>
+        <br>
+        <label>Month:</label><input type="month"/>
+        <br>
+        <label>checkbox:</label><input type="checkbox"/>
+        <br>
+        <label>Radio:</label><input type="radio" name="Aceita"/> <input type="radio" name="Aceita"> <!-- Precisa ter o mesmo nome, para idetificar, somente um pode ser selecionado -->
+        <br>
+        <label>Hidden:</label><input type="hidden"/><!-- fica invisivel para o usuario mas envia por de baixo dos panos -->
+        <br>
+        <label>File:</label><input type="file" multiple/>  <!-- serve para eviar arquivos multiple serve para poder selecionar varios arquivos-->
+        <br>
+        <label>Search:</label><input type="search"/> <!-- serve para procurar algo -->
+        <br>
+        <label>Button:</label><input type="submit" value="Enviar"/>
+        <br>
+    </form>
+</body>
+</html>

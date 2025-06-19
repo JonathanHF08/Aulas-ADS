@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Prática 04</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .container{
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: lightskyblue;
+        }
+        
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center; /* centraliza o menu */
+            gap: 20px; /* Adiciona espaço entre as celulas da grade */
+        }
+
+        .imagem_leo{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .principal{
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: lightskyblue;
+            color: white;
+            text-align: center;
+        }
+
+        ul{
+            list-style-type: none;
+            color: darkgray;
+        }
+        a,
+        a:link{
+            text-decoration: none;
+            padding:8px 16px;
+            border: solid darkgrey 1px;
+        }
+
+        li{
+            float: left; /* deixa o menu um ao lado do outro */
+        }
+
+        a:hover{
+            background-color: darkgrey;
+            color: white;
+        }
+
+        /* Media query para dispositivos moveis, quando a largura da tela for tal (max-width) será usado essas estilizações: */
+        @media only screen and (max-width: 767px){
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+            .imagem_leo{
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal{
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Biografia Leonardo da Vinci</h1>
+        <br>
+    </header>
+
+    <nav class="container menu">
+        <ul>
+            <li><a href="Aula_pratica04_biografia.html">Biografia</a></li>
+            <li><a href="Aula_pratica04_obras.html">Obras</a></li>
+            <li><a href="aula2altura.css">Curiosidades</a></li>
+        </ul>
+    </nav>
+
+    <div class="container wrapper">
+        <aside class="imagem_leo">
+            <img src="Francesco_Melzi_-_Portrait_of_Leonardo.png">
+            <div class="infos">
+                <p><strong>Ocupação</strong> Pintor italiano</p>
+                <p><strong>Data de nascimento</strong> 15/04/1452</p>
+                <p><strong>Data de morte</strong> 02/05/1519 (aos 67 anos)</p>
+            </div>
+        </aside>
+        <section class="principal">
+            <h1>Leonardo da Vinci</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem exercitationem velit fugit at ullam quis debitis sequi dolores, neque aspernatur quia esse. Animi deleniti exercitationem odio nulla ipsa impedit! Delectus neque atque rerum magnam magni molestias debitis itaque, assumenda, at quas illo ut eum, distinctio cupiditate aperiam? Deserunt eligendi sequi laudantium, exercitationem quis ducimus ipsa qui perspiciatis mollitia libero vero similique, ad odio ullam praesentium quod! Quas dolorum blanditiis reprehenderit illo, deserunt quod impedit cum natus quo dicta odit pariatur nam qui repudiandae necessitatibus commodi molestias non velit delectus tempore ducimus, nesciunt ipsam eaque! Consectetur reiciendis unde alias nobis libero. </p>
+        </section>
+    </div>
+    <footer class="container">
+        <p>Desenvolvido sem fins Lucrativos</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    
+    <form name="signup" autocomplete="on" onsubmit="alert('Formulário enviado')" target="_blank" method="post" action="#"> 
+    <!-- 
+    *Action serve para definir onde enviar o signup;
+    *Sem definir o method essas informações são enviadas pela URL,  o post envia via requisição encapsulada para um servidor;
+    *Target vc escolhe como vai enviar as informações na mesma aba ou em outra usando o blank;
+    *Autocomplete serve para gravar a senha no site ou não para acessar mais rapidamente exceto a senha.
+    *On é no HTML sempre se refere a uma ação, onclick, onsubmit nesse caso define o que fazer quando o botão do tipo submit for precionado.
+    -->
+        Nome: <input type="text" name="name"><br>
+        Idade: <input type="number" name="age"><br>
+        Senha: <input type="password" name="password"><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>

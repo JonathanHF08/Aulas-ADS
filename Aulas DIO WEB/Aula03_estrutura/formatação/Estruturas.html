@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura</title>
+    <style>
+        span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tags <div> e <span> servem para estrutura uma pagina pq elas não tem peso semantico -->
+    <div id="menu_lateral">
+        <div id="links">
+            <!-- div funciona em bloco ou seja ela quebra a linha quando é usada, separa o codigo em blocos horizontais porém posso alterar essa caracteristica mas mantendo em bloco-->
+            <ul>
+                <!-- ul>li*3>a consigo usar essa função para criar mais rapido listas-->
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <p>Dio<span>.</span>me</p>
+    <!-- Span não tem o problema da div pois ela não é em bloco e serve para marcar certo ponto para estilizar -->
+</body>
+</html>

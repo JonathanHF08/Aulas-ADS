@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentagem de Homens e Mulheres</title>
+</head>
+<body>
+    <h1>Quantidade de homens e mulheres em uma turma da faculdade </h1>
+    <form>
+        <label for="quantidade_homens">Quantidade_homens</label>
+        <input type="number" id="quantidade_homens"><br><br>
+        <label for="quantidade_mulheres">Quantidade_mulheres</label>
+        <input type="number" id="quantidade_mulheres"><br><br>
+        <input type="button" value="Calcular" onclick="calcular_porcentagem()">
+    </form>
+    <br>
+    <div id="tabela_porcentagens"></div>
+
+    <script>
+        function calcular_porcentagem(){
+            //le a quantidade de homens e mulheres informada pelo usuario
+            var quantidade_homens = parseInt(document.getElementById("quantidade_homens").value);
+            var quantidade_mulheres = parseInt(document.getElementById("quantidade_mulheres").value);
+
+            //calcula o total de alunos:
+            var total_alunos = quantidade_homens + quantidade_mulheres;
+
+            //calcula percentual de homens e mulheres:
+            var percentual_homens = (quantidade_homens/total_alunos) *100;
+            var percentual_mulheres = (quantidade_mulheres/total_alunos) *100;
+
+            //criar tabela com as porcentagens
+            var tabela = "<table>"
+                tabela += "<tr><th></th><th>Quantidade</th><th>Percentual</th></tr>";
+                tabela += "<tr><td>Homens</td><td>" + quantidade_homens + "</td><td>" + percentual_homens.toFixed(2) + "%</td></tr>";
+                tabela += "<tr><td>Mulheres</td><td>" + quantidade_mulheres + "</td><td>" + percentual_mulheres.toFixed(2) + "%</td></tr>";
+                tabela += "</table>";
+
+            //Exibe tabela napagina HTML
+            document.getElementById("tabela_porcentagens").innerHTML = tabela;
+        }
+
+    </script>
+</body>
+</html>

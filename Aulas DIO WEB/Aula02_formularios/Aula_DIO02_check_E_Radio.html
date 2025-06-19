@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio button</title>
+</head>
+<body>
+    
+    <h1>Pizza de Calabresa:</h1>
+
+    <p>Quais opcionais voçê deseja?</p> 
+
+    <form method="post"> 
+<!-- GET: Envia parâmetros na URL e é usado para "pegar" informações do servidor. É mais rápido, mas tem limitações de tamanho de dados. 
+POST: Envia dados no corpo da requisição e é usado para "postar" informações no servidor. Permite enviar grandes quantidades de dados. 
+Uso: GET é geralmente usado para solicitações de leitura, enquanto POST é usado para operações que alteram o estado do servidor. 
+Segurança: GET não é seguro para enviar informações sensíveis, pois os dados ficam visíveis na URL, enquanto POST é mais seguro. 
+Cache: Respostas de GET podem ser armazenadas em cache, enquanto as de POST não são armazenadas.  -->
+
+        <label><input type="checkbox" disabled name="opcional[]" value="queijo"/>+ queijo</label> <!-- disabled desativa o campo mas mantém visivel -->
+        <br>
+        <label><input type="checkbox" name="opcional[]" value="calabresa"/>+ calabresa</label>
+        <br>
+        <label><input type="checkbox" name="opcional[]" value="cebola"/>+ cebola</label>
+        <br>
+        <label><input type="checkbox" name="opcional[]" value="azeitona"/>+ azeitona</label>
+        <br>
+        <br> <!-- name serve para definir o campo e o value serve para definir o valor selecionado, os [] servem para definir que aqueles itens são de uma lista, sem eles apenas o ultimo item selecionado seria enviado ao servidor, identificando que o valor foi alterado varias vezes. -->
+
+        <p>Borda recheada?</p>
+
+         <label><input type="radio" name="borda" value="sim"/>Sim</label>
+         <label><input type="radio" name="borda" value="não"/>Não</label>
+        <br>
+
+        <p>Bebida</p>
+
+        <label><input type="radio" name="bebida" value="suco"/>Suco</label>
+        <br>
+        <label><input type="radio" name="bebida" value="agua/>Agua</label>
+        <br>
+        <label><input type="radio" name="bebida" value="refrigerante"/>Refrigerante</label>
+        <br>
+        <label><input type="radio" name="bebida" value="nenhum"/>Nenhum</label>
+        <br>
+        
+        <button type="submit">Enviar pedido</button>
+    </form>
+
+</body>
+</html>

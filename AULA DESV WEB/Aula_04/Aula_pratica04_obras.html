@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Prática 04</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .container{
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: lightskyblue;
+        }
+        
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center; /* centraliza o menu */
+            gap: 20px; /* Adiciona espaço entre as celulas da grade */
+        }
+
+        .imagem_leo{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .principal{
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: lightskyblue;
+            color: white;
+            text-align: center;
+        }
+
+        .card {
+            display:flex;
+            flex-flow: row wrap;
+        }
+
+        ul{
+            list-style-type: none;
+            color: darkgray;
+        }
+        a,
+        a:link{
+            text-decoration: none;
+            padding:8px 16px;
+            border: solid darkgrey 1px;
+        }
+
+        li{
+            float: left; /* deixa o menu um ao lado do outro */
+        }
+
+        a:hover{
+            background-color: darkgrey;
+            color: white;
+        }
+
+        .img{
+            border: 1px solid lightgray;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .img img {
+            width: 125px;
+            height: 115px;
+        }
+
+        @media all and (min-width: 35rem){
+            body {
+                margin: 0 auto;
+            }
+
+            /*.container{
+                max-width: 1200px;
+                margin: 0 auto;
+            }*/
+
+            .img{
+                max-width: 28rem;
+                margin: 1rem;
+            }
+        }
+
+        @media only screen and (max-width: 767px){
+            .wrapper{
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_leo{
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal{
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Biografia Leonardo da Vinci</h1>
+        <br>
+    </header>
+
+    <nav class="container menu">
+        <ul>
+            <li><a href="Aula_pratica04_biografia.html">Biografia</a></li>
+            <li><a href="Aula_pratica04_obras.html">Obras</a></li>
+            <li><a href="aula2altura.css">Curiosidades</a></li>
+        </ul>
+    </nav>
+
+    <div class="container wrapper">
+        <aside class="imagem_leo">
+            <img src="Francesco_Melzi_-_Portrait_of_Leonardo.png">
+            <div class="infos">
+                <p><strong>Ocupação</strong> Pintor italiano</p>
+                <p><strong>Data de nascimento</strong> 15/04/1452</p>
+                <p><strong>Data de morte</strong> 02/05/1519 (aos 67 anos)</p>
+            </div>
+        </aside>
+        <section class="principal">
+            <h1>Obras</h1>
+            <div class="card">
+
+                <div class="img">
+                    <img src="monalisa.webp">
+
+                    <div class="">
+                        <h2>Monalisa</h2>
+                        <p>Museu onde está exposto</p>
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="monalisa.webp">
+
+                    <div class="">
+                        <h2>Monalisa</h2>
+                        <p>Museu onde está exposto</p>
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="monalisa.webp">
+
+                    <div class="">
+                        <h2>Monalisa</h2>
+                        <p>Museu onde está exposto</p>
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="monalisa.webp">
+
+                    <div class="">
+                        <h2>Monalisa</h2>
+                        <p>Museu onde está exposto</p>
+                    </div>
+                </div>    
+
+            </div>
+        </section>
+    </div>
+    <footer class="container">
+        <p>Desenvolvido sem fins Lucrativos</p>
+    </footer>
+</body>
+
+</html>

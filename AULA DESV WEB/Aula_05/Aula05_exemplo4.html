@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de pares e impares</title>
+</head>
+<body>
+    
+    <script>
+        //cria um array vazio para armazenar os números:
+        let numeros = []
+
+        //Pede ao usuario para digitar 10 numeros e armazena cada um no array
+        for (let i = 0; i < 10; i++) {
+            numeros.push(parseInt(prompt(`Digite o ${i+1}° numero:`))); //push serve para adicionar o numero digitado no array,o +1 serve  para a informação começar em 1 e não em zero e ir somando a cada interação
+        }
+
+        //cria variaveis para armazenar a quantidade de numeros pares e impares
+        let pares = 0;
+        let impares = 0;
+
+        //percorre o array de numeros e verifica se cada um é par ou impar
+        for (let i = 0; i< numeros.length; i++) { //length é o tamanho do array
+            if (numeros [i]% 2 === 0) {
+                pares++;
+            }
+            else {
+                impares++
+            }
+        }
+
+        //exibe a quantidade de numeros pares e impares
+        console.log(`Quantidade de numeros pares: ${pares}`); // para colocar a variavel na string usa o acento `` e não aspas.
+        console.log(`Quantidade de numeros impares: ${impares}`);
+
+        //exibe a quantidade de numeros pares e impares
+        alert(`Quantidade de numeros pares: ${pares}\n Quantidade de numeros impares: ${impares}`) //  /n serve para quebra de linha
+
+    </script>
+
+</body>
+</html>
