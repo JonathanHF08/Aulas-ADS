@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        var janelaAberta = window.open ('','', 'width=400,height=400');
+        // Abre uma nova janela com as dimensões especificadas com metodo open
+        function testarJanela() {
+        if (janelaAberta.closed) {
+            alert('A janela foi fechada');
+        } else {
+        alert('A janela está aberta');
+        };
+    }
+    function abreJanela(){
+
+novaJanela = window.open('https://google.com','_blank','width=400,height=400');
+        // Abre uma nova janela com o site do google
+    }
+
+function fechaJanela(){
+novaJanela.close(); 
+        // Fecha a janela que foi aberta
+}
+// onload é um evento que é disparado quando a página é carregada
+window.onload = function() {}
+    </script>
+
+</head>
+<body>
+    <button onclick="abreJanela()">Abrir Janela</button>
+    <button onclick="fechaJanela()">Fechar Janela</button>
+
+    <button type="button" onclick="testarJanela()">Testar janela</button>
+
+<button onclick="history.back()">Voltar</button>
+<button onclick="history.forward()">Avançar</button>
+<button onclick="history.go(2)">Avançar duas</button>
+<!-- history serve para voltar ou avançar em uma pagina -->
+
+</body>
+</html>
