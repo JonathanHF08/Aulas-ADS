@@ -30,15 +30,22 @@ nav a:hover {
 
 /* Container para o conteúdo */
 .container {
+  border: 1px solid #ccc;
+  border-radius: 20px;
   display: flex;
   padding: 20px;
   max-width: 900px;
   margin: auto;
 }
+/* Estilização dos títulos e imagens */
 h1{
   text-align: left;
-  margin: 25px 230px 0 230px;
+  margin: 25px 230px 20px 230px;
 }
+h2 {
+  margin-top: 35px;
+}
+
 .fotos{
   flex: 1;
   margin-right: 20px;
@@ -48,14 +55,14 @@ form {
   flex-direction: column;
   gap: 10px;
 }
-
+/* Estilização dos campos do formulário */
 input, textarea {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
+/* Estilização do botão */
 button {
   background-color: #333;
   color: white;
@@ -67,4 +74,21 @@ button {
 
 button:hover {
   background-color: #555;
+}
+li {
+  margin: 10px 0;
+}
+/* Estilização dos links */
+a{
+  color: #131313;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+a:hover {
+  color: #003494;
+}
+/* Ajuste de tamanho do formulário */
+.formulario {
+  width: 100%;
 }
